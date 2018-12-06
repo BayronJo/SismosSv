@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sismos SV</string>
+    <string name="title_home">Principal</string>
+    <string name="title_dashboard">Info</string>
+    <string name="title_notifications">Sismos</string>
+    <string name="title_activity_mi_mapa">Map</string>
+</resources>

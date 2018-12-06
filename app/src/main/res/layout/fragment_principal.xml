@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragmentos.FragmentoPrincipal">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/person_photo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/warning" />
+
+                    <TextView
+                        android:id="@+id/person_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/person_photo"
+                        android:text="Último sismo"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtPrinFecha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/person_name"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/person_photo" />
+
+                    <TextView
+                        android:id="@+id/txtPrinMagnitud"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtPrinFecha"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/person_photo" />
+
+                    <TextView
+                        android:id="@+id/txtPrinUbicacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtPrinMagnitud"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/person_photo" />
+
+                    <TextView
+                        android:id="@+id/txtPrinProfundidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtPrinUbicacion"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/person_photo" />
+
+                    <TextView
+                        android:id="@+id/txtPrinCoordenadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtPrinProfundidad"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/person_photo" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/tel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/telimg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/warning" />
+
+                    <TextView
+                        android:id="@+id/txtTel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/telimg"
+                        android:text="Teléfono de emergercia"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tel1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtTel"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/telimg"
+                        android:autoLink="phone"
+                        android:linksClickable="true"
+                        android:text="+503 2201-2424" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/tel2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/telimg2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/warning" />
+
+                    <TextView
+                        android:id="@+id/txtTel2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/telimg2"
+                        android:text="Correo de emergercia"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tel3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtTel2"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/telimg2"
+                        android:autoLink="email"
+                        android:linksClickable="true"
+                        android:text="emergiasv@proteccioncivil.com.sv" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
